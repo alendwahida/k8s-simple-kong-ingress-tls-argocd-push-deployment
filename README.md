@@ -1,7 +1,6 @@
 # k8s-simple-kong-ingress-tls-argocd-push-deployment
 
-This project only show the example flow Continous Deployment using ArgoCD, so you need to know about GitOps Principal
-Do with your own risk
+This project only show the example flow Continous Deployment using ArgoCD, so you need to know about GitOps Principal, do with your own risk
 
 # k8s-kong-ingress-secret-tls
 Tutorial

@@ -1,7 +1,7 @@
 # ArgoCD Push Based Deployment
 This project only show the example flow Continous Deployment using ArgoCD (Push based Deloyment), you need to know about GitOps Principal, do with your own risk
 
-# k8s-kong-ingress-secret-tls
+# k8s-simple-kong-ingress-tls-argocd-push-deployment
 Tutorial
 - Apply ingress kong with tls
 - Deploy your project k8s yaml in your ops repository using argoCD

@@ -46,7 +46,8 @@ Username: admin
    ```
 Decode password using base64 & login it
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/argocd-login.jpg)
-### 10. Setting webhook on github yaml project
+### 10. Setting webhook on your github yaml pk8s roject
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/webhook-yaml-project.jpg)
+### 11. Change your configuration github yaml k8s project & see argoCD change process
 
 ### source: https://docs.konghq.com/gateway/2.8.x/install-and-run/kubernetes/

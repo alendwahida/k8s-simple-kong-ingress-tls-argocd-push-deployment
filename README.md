@@ -2,10 +2,12 @@
 
 k8s-simple-kong-ingress-tls-argocd-push-deployment
 
+This project only show example flow Continous Deployment using ArgoCD based on GitOps Principal
+
 # k8s-kong-ingress-secret-tls
 Tutorial
 - Apply ingress kong with tls
-- Apply CD argoCD
+- Deploy your project k8s yaml in your ops repository using argoCD
 ### 1. Install Kong Gateway (OSS) on Kubernetes native
    ```bash
    kubectl apply -f https://bit.ly/kong-ingress-dbless
@@ -49,5 +51,6 @@ Decode password using base64 & login it
 ### 10. Setting webhook on your github yaml pk8s roject
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/webhook-yaml-project.jpg)
 ### 11. Change your configuration github yaml k8s project & see argoCD change process
+### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/Argocd%20CD.jpg)
 
 ### source: https://docs.konghq.com/gateway/2.8.x/install-and-run/kubernetes/

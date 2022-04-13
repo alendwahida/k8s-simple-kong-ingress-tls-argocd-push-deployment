@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kong-ingress
+  namespace: staging
+spec:
+  ingressClassName: kong
+  tls:
+  - hosts:
+      - sosialmedia.awn.my.id
+    secretName: awn-tls-staging
+
+  rules:
+  - host: sosialmedia.awn.my.id
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sosialmedia-service-staging
+            port:
+              number: 8080

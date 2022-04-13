@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kong-ingress
+  namespace: argocd
+spec:
+  ingressClassName: kong
+  tls:
+  - hosts:
+      - argocd.awn.my.id
+    secretName: awn-tls
+
+  rules:
+  - host: argocd.awn.my.id
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: argocd-server
+            port:
+              number: 443

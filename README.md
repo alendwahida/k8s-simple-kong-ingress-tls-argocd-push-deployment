@@ -1,6 +1,5 @@
-# k8s-simple-kong-ingress-tls-argocd-push-deployment
-
-This project only show the example flow Continous Deployment using ArgoCD, so you need to know about GitOps Principal, do with your own risk
+# ArgoCD Push Based Deployment
+This project only show the example flow Continous Deployment using ArgoCD (Push based Deloyment), you need to know about GitOps Principal, do with your own risk
 
 # k8s-kong-ingress-secret-tls
 Tutorial
@@ -43,7 +42,7 @@ Username: admin
    ```
 Decode password using base64 & login it
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/argocd-login.jpg)
-### 9. Setting webhook on your github yaml pk8s roject
+### 9. Setting webhook on your github yaml k8s project
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/webhook-yaml-project.jpg)
 ### 10. Change your configuration github yaml k8s project & see argoCD change process
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/Argocd%20CD.jpg)

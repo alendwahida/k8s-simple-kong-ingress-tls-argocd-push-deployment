@@ -1,8 +1,7 @@
 # k8s-simple-kong-ingress-tls-argocd-push-deployment
 
-k8s-simple-kong-ingress-tls-argocd-push-deployment
-
-This project only show example flow Continous Deployment using ArgoCD based on GitOps Principal
+This project only show the example flow Continous Deployment using ArgoCD, so you need to know about GitOps Principal
+Do with your own risk
 
 # k8s-kong-ingress-secret-tls
 Tutorial
@@ -53,4 +52,7 @@ Decode password using base64 & login it
 ### 11. Change your configuration github yaml k8s project & see argoCD change process
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/Argocd%20CD.jpg)
 
-### source: https://docs.konghq.com/gateway/2.8.x/install-and-run/kubernetes/
+### source: 
+- https://docs.konghq.com/gateway/2.8.x/install-and-run/kubernetes/
+- https://argo-cd.readthedocs.io/en/stable/
+- https://www.gitops.tech/

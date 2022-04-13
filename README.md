@@ -19,26 +19,23 @@ Tutorial
    ```bash
    https://github.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment.git
    ```
-### 4. Generate your certificate file and certificate key from your ssl provider or letsencrypt
+### 4. Generate your certificate file and certificate key from your ssl provider or letsencrypt (Example with wildcard SSL)
 ### 5. Create secret within ssl certificate into file awn.my.id.crt and key into awn.my.id.key
    ```bash
    kubectl create secret tls awn-tls --key="awn.my.id.key" --cert="awn.my.id.crt" -n argocd
    kubectl create secret tls awn-tls --key="awn.my.id.key" --cert="awn.my.id.crt" -n staging
    ```
-### 6. Output:
-![alt text](https://raw.githubusercontent.com/alendwahida/k8s-kong-ingress-secret-tls/main/blob/kong-ssl-lets-encrypt.jpg)
-
-### 7. Run your ingress and argocd yaml
+### 6. Run your ingress and argocd yaml
    ```bash
    kubectl apply -f .
    ```
-### 8. Adding command --insecure
+### 7. Adding command --insecure
    ```bash
    kubectl edit deploymeny/argocd-server -n argocd
    ```
    add '--insecure' bottom command container
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/enable%20insecure%20argocd%20server.jpg)
-### 9. Login ArgoCD Server
+### 8. Login ArgoCD Server
 ### Login
 Username: admin
    ```bash
@@ -46,9 +43,9 @@ Username: admin
    ```
 Decode password using base64 & login it
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/argocd-login.jpg)
-### 10. Setting webhook on your github yaml pk8s roject
+### 9. Setting webhook on your github yaml pk8s roject
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/webhook-yaml-project.jpg)
-### 11. Change your configuration github yaml k8s project & see argoCD change process
+### 10. Change your configuration github yaml k8s project & see argoCD change process
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/Argocd%20CD.jpg)
 
 ### source: 

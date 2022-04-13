@@ -38,4 +38,7 @@ Tutorial
    ```
    add '--insecure' bottom command container
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/enable%20insecure%20argocd%20server.jpg)
+### 9. Open ArgoCD Server
+### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/argocd-login.jpg)
+
 ### source: https://docs.konghq.com/gateway/2.8.x/install-and-run/kubernetes/

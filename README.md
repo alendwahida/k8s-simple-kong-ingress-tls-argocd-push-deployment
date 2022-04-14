@@ -30,7 +30,7 @@ Tutorial
    ```
 ### 7. Adding command --insecure
    ```bash
-   kubectl edit deploymeny/argocd-server -n argocd
+   kubectl edit deployment/argocd-server -n argocd
    ```
    add '--insecure' bottom command container
 ### ![alt text](https://raw.githubusercontent.com/alendwahida/k8s-simple-kong-ingress-tls-argocd-push-deployment/main/blob/enable%20insecure%20argocd%20server.jpg)
